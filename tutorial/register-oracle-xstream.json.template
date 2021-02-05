@@ -1,0 +1,17 @@
+{
+    "name": "xstream-connector",
+    "config": {
+        "connector.class" : "io.debezium.connector.oracle.OracleConnector",
+        "tasks.max" : "1",
+        "database.server.name" : "xstream",
+        "database.hostname" : "localhost",
+        "database.port" : "1521",
+        "database.user" : "c##xstrm",
+        "database.password" : "xs",
+        "database.dbname" : "CDB193",
+        "database.pdb.name" : "PDB193",
+        "database.out.server.name" : "dbzxout",
+        "database.history.kafka.bootstrap.servers" : "kafka:9092",
+        "database.history.kafka.topic": "schema-changes.xstream-connector"
+    }
+}
